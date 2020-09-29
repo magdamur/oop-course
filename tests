@@ -1,0 +1,6 @@
+//-Arrange
+Create instance of the class, set up test data
+//-Act
+Call the method being tested
+//-Assert
+Determine the result

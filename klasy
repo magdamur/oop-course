@@ -17,7 +17,6 @@ Pozostałe modyfikatory to:
 -override — służy do nadpisywania metod wirtualnych odziedziczonych po klasie bazowej;
 -partial — pozwala rozbić klasy, metody i struktury na wiele kawałków kodu przechowywanych w osobnych plikach;
 -readonly — określa, że polu można nadać wartość jedynie w konstruktorze lub w deklaracji pola;
-
 -sealed — określa, że klasa jest klasą ostateczną i nie może być klasą bazową dla innych klas;
 -static — określa, że składnik nie należy do obiektu, tylko do typu;
 -unsafe — deklaruje niebezpieczny kontekst, czyli daje dostęp do operatorów: sizeof, &, -> oraz *;

@@ -1,1 +1,25 @@
+Dostępne są modyfikatory dostępu dla klas
+-public — publiczne składniki klasy są dostępne dla wszystkich metod wszystkichklas;
+-private — składowe prywatne są dostępne tylko dla metod klasy, w której się znajdują;
+-protected — dostępne są dla klasy, w której się znajdują, oraz dla klas dziedziczących po niej w danej bibliotece; 
+-internal — składowe wewnętrzne są dostępne dla klasy znajdującej się w danym podzespole (biblioteka, plik *.dll);
+-protected internal — jest to połączenie modyfikatorów protected i internal, jednak klasa nie może być jednocześnie protected i internal, tylko protected
+lub internal — w zależności od sytuacji, w jakiej jest użyta; dla klasy dziedziczącej będzie to modyfikator protected (klasa ta nie musi być z tego
+samego podzespołu), natomiast w przypadku innej niedziedziczącej klasy, która jednak znajduje się w tym samym podzespole, będzie to modyfikator internal.
 
+Pozostałe modyfikatory to:
+-abstract — klasa abstrakcyjna może być tylko klasą bazową dla innych klas;nie można utworzyć instancji takiej klasy;
+-async — wskazuje, że metoda, wyrażenie lambda lub metoda anonimowa są asynchroniczne;
+-const — oznacza, że wartość składowej lub zmiennej nie może być modyfikowana;
+-event — deklaruje zdarzenie;
+-extern — wskazuje, że metoda została zaimplementowana zewnętrznie;
+-new — ukrywa składniki klasy, które mają taką samą nazwę w klasie podstawowej; operator niweluje ostrzeżenie o ukrywaniu składnika klasy;
+-override — służy do nadpisywania metod wirtualnych odziedziczonych po klasie bazowej;
+-partial — pozwala rozbić klasy, metody i struktury na wiele kawałków kodu przechowywanych w osobnych plikach;
+-readonly — określa, że polu można nadać wartość jedynie w konstruktorze lub w deklaracji pola;
+
+-sealed — określa, że klasa jest klasą ostateczną i nie może być klasą bazową dla innych klas;
+-static — określa, że składnik nie należy do obiektu, tylko do typu;
+-unsafe — deklaruje niebezpieczny kontekst, czyli daje dostęp do operatorów: sizeof, &, -> oraz *;
+-virtual — określa metody wirtualne, które mogą być nadpisywane w klasach dziedziczących po klasie, w której się znajdują;
+-volatile — określa pole, które może być modyfikowane w programie przez system operacyjny, sprzęt lub równolegle działający wątek.
